@@ -5,6 +5,7 @@ import TitleSection from "@/src/components/Layout/TitleSection";
 import HomeHero from "@/src/components/HomeHero";
 
 import StackList from "@/src/components/StackList";
+import OurTalents from "@/src/components/OurTalents";
 
 function Home() {
   return (
@@ -22,7 +23,7 @@ function Home() {
 
       <TitleSection title={"dev-camp"} subtitle={"bienvenidos"} />
 
-      <StackList/>
+      <StackList />
 
       <HomeHero
         direction={"row-reverse"}
@@ -33,7 +34,7 @@ function Home() {
         buttonBg={"#000"}
       />
 
-<HomeHero
+      <HomeHero
         direction={"row"}
         textColor={"#212529"}
         bgColor={"#fff"}
@@ -41,6 +42,10 @@ function Home() {
         buttonColor={"#fff"}
         buttonBg={"#000"}
       />
+
+      <TitleSection title={"Our Talents"} subtitle={"TEAM"} />
+
+      <OurTalents/>
 
       <Footer />
     </Flex>
