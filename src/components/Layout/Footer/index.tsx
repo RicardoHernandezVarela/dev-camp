@@ -12,7 +12,7 @@ function Footer() {
       alignItems={{ base: "center" }}
       direction={{ base: "column", sm: "row" }}
     >
-      <Flex gap="30px" border="1px">
+      <Flex gap="30px" >
         <svg
           className="svg-icon"
           viewBox="0 0 20 20"
