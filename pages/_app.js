@@ -12,7 +12,16 @@ const colors = {
   },
 };
 
-export const theme = extendTheme({ colors });
+const breakpoints = {
+  base: "0",
+  sm: "480px", // 480px
+  md: "768px", // 768px
+  lg: "62em", // 992px
+  xl: "80em", // 1280px
+  "2xl": "96em", // 1536px
+};
+
+export const theme = extendTheme({ colors, breakpoints });
 
 // 3. Pass the `theme` prop to the `ChakraProvider`
 function MyApp({ Component, pageProps }) {
