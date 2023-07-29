@@ -9,7 +9,7 @@ import OurTalents from "@/src/components/OurTalents";
 
 function Home() {
   return (
-    <Flex flexDirection="column">
+    <Flex flexDirection="column" >
       <Header />
 
       <HomeHero
