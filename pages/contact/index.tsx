@@ -38,7 +38,14 @@ function Contact() {
           </FormLabel>
           <Input bg="#eee" border="1px" type="text" />
 
-          <Button bg="black" color="white" w="100%">
+          <Button
+            bg="black"
+            color="white"
+            w="100%"
+            border="1px"
+            borderColor="transparent"
+            _hover={{ color: "black", bg: "white", borderColor: "black" }}
+          >
             Enviar
           </Button>
         </FormControl>
