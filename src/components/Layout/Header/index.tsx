@@ -26,7 +26,7 @@ function Header() {
       py="38px"
       bg="#74c69d"
       px={{ base: "20px", xl: "50px" }}
-      justifyContent={{ base: "center", md: "space-between" }}
+      justifyContent={{ base: "space-between", md: "space-between" }}
       alignItems={{ base: "center" }}
     >
       <Flex w="188px" h="50px">
