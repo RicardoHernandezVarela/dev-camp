@@ -8,7 +8,6 @@ function Footer() {
       py={{ base: "20px" }}
       px={{ base: "10px", sm: "20px", xl: "50px" }}
       mt="20px"
-    
       justifyContent={{ base: "center", sm: "space-between" }}
       alignItems={{ base: "center" }}
       direction={{ base: "column", sm: "row" }}
