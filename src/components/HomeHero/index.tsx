@@ -10,13 +10,15 @@ function HomeHero(props: any) {
       px="20px"
       pt="40px"
       justifyContent="space-between"
-      direction={props.direction}
+      direction={{ base: "column-reverse", md: props.direction }}
     >
-      <Flex direction="column" w="416px" mb="123px">
+      <Flex direction="column" w={{ base: "100%", md: "416px" }} my="60px">
         <Text color=" #FFF" fontSize="16px" fontWeight="700" mb="15px">
           WELCOME
         </Text>
+
         <Heading
+          w="100%"
           color={props.textColor}
           fontSize="40px"
           fontWeight="700"
@@ -25,7 +27,7 @@ function HomeHero(props: any) {
           Lorem ipsum dolor sit amet consectetur
         </Heading>
 
-        <Text fontSize="15px" fontWeight="700" color={props.textColor}>
+        <Text w="100%" fontSize="15px" fontWeight="700" color={props.textColor}>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
           nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum,
           voluptate culpa nesciunt delectus iste?
@@ -38,7 +40,11 @@ function HomeHero(props: any) {
         />
       </Flex>
 
-      <Flex w="644px" h="378px" mb="83px">
+      <Flex
+        w={{ base: "100%", md: "644px" }}
+        h={{ base: "250px", md: "378px" }}
+        mb={{ base: "20px", md: "83px" }}
+      >
         <Image src={ImgGrupo} alt="" />
       </Flex>
     </Flex>

@@ -3,7 +3,7 @@ import CommonButton from "../Layout/CommonButton";
 
 function StackList() {
   return (
-    <Flex direction="column" alignContent="center" alignItems="center">
+    <Flex direction="column" alignContent="center" alignItems="center" my="20px">
       <Flex
         h="auto"
         gap="68px"
