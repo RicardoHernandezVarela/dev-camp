@@ -11,6 +11,9 @@ function CommonButton(props: any) {
       color={props.color}
       fontSize="20px"
       fontWeight="400"
+      border="1px"
+      borderColor="transparent"
+      _hover={{ color: props.bg, bg: props.color, borderColor: props.bg }}
     >
       {props.text}
     </Button>

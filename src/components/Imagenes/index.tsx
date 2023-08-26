@@ -12,9 +12,10 @@ function Imagenes(props: any) {
     >
       <Flex
         gap="55px"
-        w="1200px"
+        w="100%"
+        direction={{ base: "column", md: "row" }}
         wrap="wrap"
-        m="30px"
+        // m="30px"
         justifyContent="center"
         alignItems="center"
       >

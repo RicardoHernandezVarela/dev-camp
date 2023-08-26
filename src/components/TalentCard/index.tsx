@@ -3,18 +3,18 @@ import { Flex, Image, Text } from "@chakra-ui/react";
 function TalentCard() {
   return (
     <Flex
-      w="255px"
+      w="200px"
       h="299px"
       justifyContent="center"
-      px="25px"
+      px="15px"
       py="20px"
       borderRadius="5px"
       boxShadow="3px 4px 12px 1px rgba(0, 0, 0, 0.25)"
     >
       <Flex direction="column" gap="18px">
         <Image
-          w="175px"
-          h="175px"
+          w="150px"
+          h="150px"
           borderRadius="full"
           border="1px"
           src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg"

@@ -2,11 +2,17 @@ import { Flex } from "@chakra-ui/react";
 import CommonButton from "../Layout/CommonButton";
 
 function StackList() {
-    return(
-
-        <Flex direction="column" alignContent="center" alignItems="center">
-
-        <Flex h="50px"  gap="68px" mt="55px">
+  return (
+    <Flex direction="column" alignContent="center" alignItems="center" my="20px">
+      <Flex
+        h="auto"
+        gap="68px"
+        mt="55px"
+        direction={{ base: "column", md: "row" }}
+        alignItems="center"
+        justifyContent="center"
+        flexWrap={{ base: "nowrap", md: "wrap" }}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="153"
@@ -110,9 +116,8 @@ function StackList() {
       </Flex>
 
       <CommonButton text={"Learn More"} color={"#fff"} bg={"#000"} />
-
-      </Flex>
-    )
+    </Flex>
+  );
 }
 
 export default StackList;
