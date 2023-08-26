@@ -23,9 +23,9 @@ function Intro() {
       </ul>
 
       <p>
-        La estructura de una página se describe en un archivo de texto, este
+        {`La estructura de una página se describe en un archivo de texto, este
         archivo se conoce como archivo html, frecuentemente se usa el nombre
-        "index" para el archivo.
+        "index" para el archivo.`}
       </p>
 
       <p>Ejemplo:</p>

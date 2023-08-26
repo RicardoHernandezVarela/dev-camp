@@ -9,8 +9,8 @@ function Images() {
       </p>
 
       <p>
-        img src="./img/logo-html5.png" alt="HTML5 logo" width="500" height="600"
-        /
+        {`<img src="./img/logo-html5.png" alt="HTML5 logo" width="500" height="600"
+        />`}
       </p>
 
       <p>Ejemplo:</p>
@@ -23,11 +23,11 @@ function Images() {
       />
 
       <p>
-        Esta etiqueta necesita algo que se conoce como "atributos" para
-        mostrarse correctamente en la página.
+        {`Esta etiqueta necesita algo que se conoce como "atributos" para
+        mostrarse correctamente en la página.`}
       </p>
 
-      <p>Los "atributos" describen qué imagen se mostrará y cómo se vera.</p>
+      <p>{`Los "atributos" describen qué imagen se mostrará y cómo se vera.`}</p>
 
       <h3> src</h3>
 
