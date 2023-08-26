@@ -6,8 +6,8 @@ function Text() {
       <h2> Títulos o Encabezados</h2>
 
       <p>
-        Si queremos agregar títulos a la página usamos las etiquetas "H", tienen
-        un nivel de importancia que va del 1 hasta el 6.
+        {`Si queremos agregar títulos a la página usamos las etiquetas "H", tienen
+        un nivel de importancia que va del 1 hasta el 6.`}
       </p>
 
       <p>Ejemplos:</p>
@@ -60,8 +60,8 @@ function Text() {
       </p>
 
       <p>
-        Los enlaces puden ser a otros sitios web (externo) o dentro del mismo
-        sitio (interno).
+        {`Los enlaces puden ser a otros sitios web (externo) o dentro del mismo
+        sitio (interno).`}
       </p>
 
       <p>Ejemplos:</p>
