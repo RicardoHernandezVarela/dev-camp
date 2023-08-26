@@ -5,15 +5,14 @@ import TitleSection from "@/src/components/Layout/TitleSection";
 import Imagenes from "@/src/components/Imagenes";
 
 function Portfolio() {
-    return(
-        <Flex flexDirection="column">
-             <Header/>
-             <TitleSection title={"Portafolio"} subtitle={"Proyectos"} />
-             <Imagenes/>
-             <Footer />
-             
-        </Flex>
-    );
+  return (
+    <Flex flexDirection="column">
+      <Header />
+      <TitleSection title={"Portafolio"} subtitle={"Proyectos"} />
+      <Imagenes />
+      <Footer />
+    </Flex>
+  );
 }
 
 export default Portfolio;

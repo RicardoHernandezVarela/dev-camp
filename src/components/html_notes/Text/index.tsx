@@ -13,23 +13,23 @@ function Text() {
       <p>Ejemplos:</p>
 
       <h1>
-        Título nivel 1: <code>&lt;h1&gt;</code>Título<code>&lt;/h1&gt;</code>
+        Título nivel 1: h1Título/h1
       </h1>
       <h2>
-        Título nivel 2: <code>&lt;h2&gt;</code>Título<code>&lt;/h2&gt;</code>
+        Título nivel 2: h2Título/h2
       </h2>
       <h3>
-        Título nivel 3: <code>&lt;h3&gt;</code>Título<code>&lt;/h3&gt;</code>
+        Título nivel 3: h3Título/h3
       </h3>
       <h4>
-        Titulo nivel 4: <code>&lt;h4&gt;</code>Título<code>&lt;/h4&gt;</code>
+        Titulo nivel 4: h4Título/h4
       </h4>
 
       <h5>
-        Título nivel 5: <code>&lt;h5&gt;</code>Título<code>&lt;/h5&gt;</code>
+        Título nivel 5: h5Título/h5
       </h5>
       <h6>
-        Título nivel 6: <code>&lt;h6&gt;</code>Título<code>&lt;/h6&gt;</code>
+        Título nivel 6: h6Título/h6
       </h6>
 
       <h2> Párrafos</h2>
@@ -42,7 +42,7 @@ function Text() {
       <p>Ejemplo:</p>
 
       <p>
-        <code>&lt;p&gt;</code>Esto es un párrafo<code>&lt;/p&gt;</code>
+        pEsto es un párrafo/p
       </p>
 
       <h2> Etiquetas dentro de etiquetas?</h2>
@@ -56,19 +56,19 @@ function Text() {
 
       <p>
         Este es un ejemplo de texto en <strong>negritas</strong>.
-        <code>&lt;strong&gt;</code>
-        <code>&lt;/strong&gt;</code>
+        strong
+        /strong
       </p>
 
       <p>
-        Este es un ejemplo de texto en <i>italica</i>. <code>&lt;i&gt;</code>
-        <code>&lt;/i&gt;</code>
+        Este es un ejemplo de texto en <i>italica</i>. i
+        /i
       </p>
 
       <p>
         Este es un ejemplo de texto en <span>span</span>.{" "}
-        <code>&lt;span&gt;</code>
-        <code>&lt;/span&gt;</code>
+        span
+        /span
       </p>
 
       <h2> Enlaces</h2>

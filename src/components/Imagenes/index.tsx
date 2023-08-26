@@ -64,7 +64,12 @@ function Imagenes(props: any) {
         />
       </Flex>
 
-      <CommonButton text="Learn More" color="white" bg="black" />
+      <CommonButton
+        text="Learn More"
+        color="white"
+        bg="black"
+        route={"/all-notes"}
+      />
     </Flex>
   );
 }
