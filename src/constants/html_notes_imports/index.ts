@@ -1,7 +1,7 @@
 import Intro from "@/src/components/html_notes/Intro";
 import Text from "../../components/html_notes/Text";
-// import Lists from "../../components/html_notes/Lists";
-// import Images from "../../components/html_notes/Images";
+import Lists from "../../components/html_notes/Lists";
+import Images from "../../components/html_notes/Images";
 // import BlockandInlineElements from "../../components/html_notes/BlockandInlineElements";
 // import Containers from "../../components/html_notes/Containers";
 // import FigureAndEm from "../../components/html_notes/FigureAndEm";
@@ -22,14 +22,14 @@ const html_notes = [
     name: "texto",
     example: Text,
   },
-  // {
-  //   name: "listas",
-  //   example: Lists,
-  // },
-  // {
-  //   name: "imágenes",
-  //   example: Images,
-  // },
+  {
+    name: "listas",
+    example: Lists,
+  },
+  {
+    name: "imágenes",
+    example: Images,
+  },
   // {
   //   name: "elementos de línea y de bloque",
   //   example: BlockandInlineElements,

@@ -1,6 +1,9 @@
+import { useRouter } from "next/router";
 import { Button } from "@chakra-ui/react";
 
 function CommonButton(props: any) {
+  const router = useRouter();
+
   return (
     <Button
       bg={props.bg}
@@ -14,6 +17,11 @@ function CommonButton(props: any) {
       border="1px"
       borderColor="transparent"
       _hover={{ color: props.bg, bg: props.color, borderColor: props.bg }}
+      onClick={() => {
+        router.push(props.route || "/", undefined, {
+          shallow: true,
+        });
+      }}
     >
       {props.text}
     </Button>
