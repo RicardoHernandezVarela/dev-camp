@@ -27,7 +27,7 @@ function HeaderHam() {
         <Link
           href="/"
           textDecoration="none"
-          _hover={{ color: "#74c69d", bg: "#fff" }}
+          _hover={{ color: "main", bg: "#fff" }}
           p="8px"
         >
           Home
@@ -35,7 +35,7 @@ function HeaderHam() {
         <Link
           href="/portfolio"
           textDecoration="none"
-          _hover={{ color: "#74c69d", bg: "#fff" }}
+          _hover={{ color: "main", bg: "#fff" }}
           p="8px"
         >
           Portfolio
@@ -43,7 +43,7 @@ function HeaderHam() {
         <Link
           href="/courses"
           textDecoration="none"
-          _hover={{ color: "#74c69d", bg: "#fff" }}
+          _hover={{ color: "main", bg: "#fff" }}
           p="8px"
         >
           Cursos
@@ -51,14 +51,14 @@ function HeaderHam() {
         <Link
           href="contact"
           textDecoration="none"
-          _hover={{ color: "#74c69d", bg: "#fff" }}
+          _hover={{ color: "main", bg: "#fff" }}
           p="8px"
         >
           Contacto
         </Link>
       </Flex>
 
-      <Flex display={{base:"flex", md:"none"}}>
+      <Flex display={{ base: "flex", md: "none" }}>
         <Menu>
           <MenuButton as={Button} variant="unstyled">
             <svg className="svg-icon" viewBox="0 0 20 20">
@@ -70,45 +70,45 @@ function HeaderHam() {
 								c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"
               ></path>
             </svg>
-          </MenuButton >
-          <MenuList display="flex" flexDirection="column" >
-          <Link
-          href="/"
-          textDecoration="none"
-          _hover={{ color: "#74c69d", bg: "#fff" }}
-          p="8px"
-          border="1px"
-          w="100px"
-        >
-          Home
-        </Link>
-        <Link
-          href="/portfolio"
-          textDecoration="none"
-          _hover={{ color: "#74c69d", bg: "#fff" }}
-          p="8px"
-          w="100px"
-        >
-          Portfolio
-        </Link>
-        <Link
-          href="/courses"
-          textDecoration="none"
-          _hover={{ color: "#74c69d", bg: "#fff" }}
-          p="8px"
-          w="100px"
-        >
-          Cursos
-        </Link>
-        <Link
-          href="contact"
-          textDecoration="none"
-          _hover={{ color: "#74c69d", bg: "#fff" }}
-          p="8px"
-          w="100px"
-        >
-          Contacto
-        </Link>
+          </MenuButton>
+          <MenuList display="flex" flexDirection="column">
+            <Link
+              href="/"
+              textDecoration="none"
+              _hover={{ color: "main", bg: "#fff" }}
+              p="8px"
+              border="1px"
+              w="100px"
+            >
+              Home
+            </Link>
+            <Link
+              href="/portfolio"
+              textDecoration="none"
+              _hover={{ color: "main", bg: "#fff" }}
+              p="8px"
+              w="100px"
+            >
+              Portfolio
+            </Link>
+            <Link
+              href="/courses"
+              textDecoration="none"
+              _hover={{ color: "main", bg: "#fff" }}
+              p="8px"
+              w="100px"
+            >
+              Cursos
+            </Link>
+            <Link
+              href="contact"
+              textDecoration="none"
+              _hover={{ color: "main", bg: "#fff" }}
+              p="8px"
+              w="100px"
+            >
+              Contacto
+            </Link>
           </MenuList>
         </Menu>
       </Flex>

@@ -15,7 +15,7 @@ function Home() {
       <HomeHero
         direction={"row"}
         textColor={"#fff"}
-        bgColor={"#74c69d"}
+        bgColor={"main"}
         buttonText={"Explore"}
         buttonColor={"#000"}
         buttonBg={"#fff"}

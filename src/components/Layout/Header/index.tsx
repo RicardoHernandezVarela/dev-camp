@@ -24,7 +24,7 @@ function Header() {
     <Flex
       w="100%"
       py="38px"
-      bg="#74c69d"
+      bg="main"
       px={{ base: "20px", xl: "50px" }}
       justifyContent={{ base: "space-between", md: "space-between" }}
       alignItems={{ base: "center" }}
@@ -46,7 +46,7 @@ function Header() {
         <Link
           href="/"
           textDecoration="none"
-          _hover={{ color: "#74c69d", bg: "#fff" }}
+          _hover={{ color: "main", bg: "#fff" }}
           p="8px"
         >
           Home
@@ -54,7 +54,7 @@ function Header() {
         <Link
           href="/portfolio"
           textDecoration="none"
-          _hover={{ color: "#74c69d", bg: "#fff" }}
+          _hover={{ color: "main", bg: "#fff" }}
           p="8px"
         >
           Portfolio
@@ -62,7 +62,7 @@ function Header() {
         <Link
           href="/courses"
           textDecoration="none"
-          _hover={{ color: "#74c69d", bg: "#fff" }}
+          _hover={{ color: "main", bg: "#fff" }}
           p="8px"
         >
           Cursos
@@ -70,7 +70,7 @@ function Header() {
         <Link
           href="contact"
           textDecoration="none"
-          _hover={{ color: "#74c69d", bg: "#fff" }}
+          _hover={{ color: "main", bg: "#fff" }}
           p="8px"
         >
           Contacto
@@ -101,7 +101,7 @@ function Header() {
             <Link
               href="/"
               textDecoration="none"
-              _hover={{ color: "#74c69d", bg: "#fff" }}
+              _hover={{ color: "main", bg: "#fff" }}
               p="8px"
             >
               Home
@@ -109,7 +109,7 @@ function Header() {
             <Link
               href="/portfolio"
               textDecoration="none"
-              _hover={{ color: "#74c69d", bg: "#fff" }}
+              _hover={{ color: "main", bg: "#fff" }}
               p="8px"
             >
               Portfolio
@@ -117,7 +117,7 @@ function Header() {
             <Link
               href="/courses"
               textDecoration="none"
-              _hover={{ color: "#74c69d", bg: "#fff" }}
+              _hover={{ color: "main", bg: "#fff" }}
               p="8px"
             >
               Cursos
@@ -125,7 +125,7 @@ function Header() {
             <Link
               href="contact"
               textDecoration="none"
-              _hover={{ color: "#74c69d", bg: "#fff" }}
+              _hover={{ color: "main", bg: "#fff" }}
               p="8px"
             >
               Contacto

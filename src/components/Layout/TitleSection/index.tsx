@@ -15,7 +15,7 @@ function TitleSection(props: any) {
         fontWeight="700"
         lineHeight="125%"
         textTransform="uppercase"
-        color="#74c69d"
+        color="main"
       >
         {props.subtitle}
       </Text>
@@ -32,8 +32,6 @@ function TitleSection(props: any) {
       <Text fontSize="20px" lineHeight="125%" textAlign={{ base: "center" }}>
         Lorem ipsum, dolor sit amet consectetur adipisising elit.
       </Text>
-
-      
     </Flex>
   );
 }

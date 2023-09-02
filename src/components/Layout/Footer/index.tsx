@@ -3,7 +3,7 @@ import { Button, Flex, Text } from "@chakra-ui/react";
 function Footer() {
   return (
     <Flex
-      bg="#74c69d"
+      bg="main"
       w="100%"
       py={{ base: "20px" }}
       px={{ base: "10px", sm: "20px", xl: "50px" }}
