@@ -7,13 +7,15 @@ import {
   Button,
 } from "@chakra-ui/react";
 import Image from "next/image";
+
 import logo from "../../../assets/logo.png";
 
-import STATUS from "@/src/constants/status/status";
-
 import LoadingDots from "../LoadingDots";
+import LinkWrapper from "../LinkWrapper";
 
 import useHeader from "./useHeader";
+
+import STATUS from "@/src/constants/status/status";
 
 function Header() {
   const { status, sanityData } = useHeader();
@@ -46,38 +48,38 @@ function Header() {
 
         {status === STATUS.HAS_SUCCEDED && (
           <>
-            <Link
+            <LinkWrapper
               href="/"
               textDecoration="none"
-              _hover={{ color: "main", bg: "#fff" }}
+              hover={{ color: "main", bg: "#fff" }}
               p="8px"
             >
               Home
-            </Link>
-            <Link
+            </LinkWrapper>
+            <LinkWrapper
               href="/portfolio"
               textDecoration="none"
-              _hover={{ color: "main", bg: "#fff" }}
+              hover={{ color: "main", bg: "#fff" }}
               p="8px"
             >
               Portfolio
-            </Link>
-            <Link
+            </LinkWrapper>
+            <LinkWrapper
               href="/courses"
               textDecoration="none"
-              _hover={{ color: "main", bg: "#fff" }}
+              hover={{ color: "main", bg: "#fff" }}
               p="8px"
             >
               Cursos
-            </Link>
-            <Link
+            </LinkWrapper>
+            <LinkWrapper
               href="contact"
               textDecoration="none"
-              _hover={{ color: "main", bg: "#fff" }}
+              hover={{ color: "main", bg: "#fff" }}
               p="8px"
             >
               Contacto
-            </Link>
+            </LinkWrapper>
           </>
         )}
       </Flex>
@@ -105,38 +107,38 @@ function Header() {
 
           {status === STATUS.HAS_SUCCEDED && (
             <MenuList display="flex" flexDirection="column">
-              <Link
+              <LinkWrapper
                 href="/"
                 textDecoration="none"
-                _hover={{ color: "main", bg: "#fff" }}
+                hover={{ color: "main", bg: "#fff" }}
                 p="8px"
               >
                 Home
-              </Link>
-              <Link
+              </LinkWrapper>
+              <LinkWrapper
                 href="/portfolio"
                 textDecoration="none"
-                _hover={{ color: "main", bg: "#fff" }}
+                hover={{ color: "main", bg: "#fff" }}
                 p="8px"
               >
                 Portfolio
-              </Link>
-              <Link
+              </LinkWrapper>
+              <LinkWrapper
                 href="/courses"
                 textDecoration="none"
-                _hover={{ color: "main", bg: "#fff" }}
+                hover={{ color: "main", bg: "#fff" }}
                 p="8px"
               >
                 Cursos
-              </Link>
-              <Link
+              </LinkWrapper>
+              <LinkWrapper
                 href="contact"
                 textDecoration="none"
-                _hover={{ color: "main", bg: "#fff" }}
+                hover={{ color: "main", bg: "#fff" }}
                 p="8px"
               >
                 Contacto
-              </Link>
+              </LinkWrapper>
             </MenuList>
           )}
         </Menu>
