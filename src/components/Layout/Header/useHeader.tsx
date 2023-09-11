@@ -6,7 +6,7 @@ function useHeader() {
   /* STATE */
   const [status, setStatus] = useState(STATUS.IS_LOADING);
 
-  const [sanityData, setSanityData] = useState();
+  const [sanityData, setSanityData] = useState<any>({});
 
   /* GET HEADER DATA */
   const getHeaderData = async () => {
@@ -23,6 +23,7 @@ function useHeader() {
       const { header } = headerJson;
 
       const headerComponentData = header[0];
+      //console.log("headerComponentData: ", headerComponentData);
 
       setSanityData(headerComponentData);
       setStatus(STATUS.HAS_SUCCEDED);

@@ -1,17 +1,9 @@
-import {
-  Flex,
-  Link,
-  Menu,
-  MenuButton,
-  MenuList,
-  Button,
-} from "@chakra-ui/react";
+import { Flex, Menu, MenuButton, MenuList, Button } from "@chakra-ui/react";
 import Image from "next/image";
-
-import logo from "../../../assets/logo.png";
 
 import LoadingDots from "../LoadingDots";
 import LinkWrapper from "../LinkWrapper";
+import ImageFromSanity from "../ImageFromSanity";
 
 import useHeader from "./useHeader";
 
@@ -30,7 +22,12 @@ function Header() {
       alignItems={{ base: "center" }}
     >
       <Flex w="188px" h="50px">
-        <Image src={logo} alt="" width={188} height={50} />
+        <ImageFromSanity
+          src={sanityData?.logo}
+          width={188}
+          height={50}
+          status={status}
+        />
       </Flex>
 
       {/* EXPANDED MENU */}
