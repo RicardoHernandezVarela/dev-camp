@@ -2,7 +2,15 @@ import { useEffect, useState } from "react";
 
 import STATUS from "@/src/constants/status/status";
 
+import useCommonComponentsStore from "@/src/store/commonComponentsStore";
+
 function useHeader() {
+  const headerData = useCommonComponentsStore((state: any) => state.headerData);
+
+  const setHeaderData = useCommonComponentsStore(
+    (state: any) => state.setHeaderData
+  );
+
   /* STATE */
   const [status, setStatus] = useState(STATUS.IS_LOADING);
 
@@ -11,6 +19,14 @@ function useHeader() {
   /* GET HEADER DATA */
   const getHeaderData = async () => {
     if (status === STATUS.HAS_SUCCEDED) return null;
+
+    if (headerData) {
+      setSanityData(headerData);
+
+      setStatus(STATUS.HAS_SUCCEDED);
+
+      return null;
+    }
 
     try {
       const headerResponse = await fetch("/api/sanity/get-header");
@@ -23,9 +39,11 @@ function useHeader() {
       const { header } = headerJson;
 
       const headerComponentData = header[0];
-      console.log("headerComponentData: ", headerComponentData);
+      //console.log("headerComponentData: ", headerComponentData);
 
       setSanityData(headerComponentData);
+      setHeaderData(headerComponentData);
+
       setStatus(STATUS.HAS_SUCCEDED);
     } catch (error) {
       setStatus(STATUS.HAS_ERROR);
