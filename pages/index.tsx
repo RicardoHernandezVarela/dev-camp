@@ -1,6 +1,4 @@
-import { Flex } from "@chakra-ui/react";
-import Header from "@/src/components/Layout/Header";
-import Footer from "@/src/components/Layout/Footer";
+import { Flex, Text } from "@chakra-ui/react";
 import TitleSection from "@/src/components/Layout/TitleSection";
 import HomeHero from "@/src/components/HomeHero";
 
@@ -8,7 +6,23 @@ import StackList from "@/src/components/StackList";
 import OurTalents from "@/src/components/OurTalents";
 import PageWrapper from "@/src/components/Layout/PageWrapper";
 
+import LoadingDots from "@/src/components/Layout/LoadingDots";
+
+import useHome from "@/src/hooks/useHome";
+
+import STATUS from "@/src/constants/status/status";
+
 function Home() {
+  const { status, sanityData } = useHome();
+
+  if (status === STATUS.IS_LOADING) {
+    return <LoadingDots />;
+  }
+
+  if (status === STATUS.HAS_ERROR) {
+    return <Text>{STATUS.HAS_ERROR}</Text>; // CREAR COMPONENTE PARA MOSTRAR UN ERROR DE DESCARGA DE DATOS
+  }
+
   return (
     <PageWrapper title={"Dev-camp"}>
       <Flex flexDirection="column">
