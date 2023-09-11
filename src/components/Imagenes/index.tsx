@@ -68,7 +68,7 @@ function Imagenes(props: any) {
         text="Learn More"
         color="white"
         bg="black"
-        route={"/all-notes"}
+        route={"/class-notes-examples"}
       />
     </Flex>
   );

@@ -23,7 +23,7 @@ function useHeader() {
       const { header } = headerJson;
 
       const headerComponentData = header[0];
-      //console.log("headerComponentData: ", headerComponentData);
+      console.log("headerComponentData: ", headerComponentData);
 
       setSanityData(headerComponentData);
       setStatus(STATUS.HAS_SUCCEDED);
