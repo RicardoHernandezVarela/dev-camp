@@ -6,49 +6,48 @@ import HomeHero from "@/src/components/HomeHero";
 
 import StackList from "@/src/components/StackList";
 import OurTalents from "@/src/components/OurTalents";
+import PageWrapper from "@/src/components/Layout/PageWrapper";
 
 function Home() {
   return (
-    <Flex flexDirection="column" >
-      <Header />
+    <PageWrapper title={"Dev-camp"}>
+      <Flex flexDirection="column">
+        <HomeHero
+          direction={"row"}
+          textColor={"#fff"}
+          bgColor={"main"}
+          buttonText={"Explore"}
+          buttonColor={"#000"}
+          buttonBg={"#fff"}
+        />
 
-      <HomeHero
-        direction={"row"}
-        textColor={"#fff"}
-        bgColor={"main"}
-        buttonText={"Explore"}
-        buttonColor={"#000"}
-        buttonBg={"#fff"}
-      />
+        <TitleSection title={"dev-camp"} subtitle={"bienvenidos"} />
 
-      <TitleSection title={"dev-camp"} subtitle={"bienvenidos"} />
+        <StackList />
 
-      <StackList />
+        <HomeHero
+          direction={"row-reverse"}
+          textColor={"#212529"}
+          bgColor={"#fff"}
+          buttonText={"Learn More"}
+          buttonColor={"#fff"}
+          buttonBg={"#000"}
+        />
 
-      <HomeHero
-        direction={"row-reverse"}
-        textColor={"#212529"}
-        bgColor={"#fff"}
-        buttonText={"Learn More"}
-        buttonColor={"#fff"}
-        buttonBg={"#000"}
-      />
+        <HomeHero
+          direction={"row"}
+          textColor={"#212529"}
+          bgColor={"#fff"}
+          buttonText={"Learn More"}
+          buttonColor={"#fff"}
+          buttonBg={"#000"}
+        />
 
-      <HomeHero
-        direction={"row"}
-        textColor={"#212529"}
-        bgColor={"#fff"}
-        buttonText={"Learn More"}
-        buttonColor={"#fff"}
-        buttonBg={"#000"}
-      />
+        <TitleSection title={"Our Talents"} subtitle={"TEAM"} />
 
-      <TitleSection title={"Our Talents"} subtitle={"TEAM"} />
-
-      <OurTalents/>
-
-      <Footer />
-    </Flex>
+        <OurTalents />
+      </Flex>
+    </PageWrapper>
   );
 }
 
