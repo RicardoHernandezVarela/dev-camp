@@ -1,25 +1,17 @@
-import {
-  Flex,
-  Text,
-  Link,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  Button,
-} from "@chakra-ui/react";
+import { Flex, Menu, MenuButton, MenuList, Button } from "@chakra-ui/react";
 import Image from "next/image";
-import logo from "../../../assets/logo.png";
 
-const styles = {
-  header: {
-    w: "100%",
-    h: "90px",
-    bg: "blue.200",
-  },
-};
+import LoadingDots from "../LoadingDots";
+import LinkWrapper from "../LinkWrapper";
+import ImageFromSanity from "../ImageFromSanity";
+
+import useHeader from "./useHeader";
+
+import STATUS from "@/src/constants/status/status";
 
 function Header() {
+  const { status, sanityData } = useHeader();
+
   return (
     <Flex
       w="100%"
@@ -30,9 +22,15 @@ function Header() {
       alignItems={{ base: "center" }}
     >
       <Flex w="188px" h="50px">
-        <Image src={logo} alt="" width={188} height={50} />
+        <ImageFromSanity
+          src={sanityData?.logo}
+          width={188}
+          height={50}
+          status={status}
+        />
       </Flex>
 
+      {/* EXPANDED MENU */}
       <Flex
         gap="35px"
         justifyContent="center"
@@ -43,38 +41,44 @@ function Header() {
         lineHeight="125%"
         display={{ base: "none", md: "flex" }}
       >
-        <Link
-          href="/"
-          textDecoration="none"
-          _hover={{ color: "main", bg: "#fff" }}
-          p="8px"
-        >
-          Home
-        </Link>
-        <Link
-          href="/portfolio"
-          textDecoration="none"
-          _hover={{ color: "main", bg: "#fff" }}
-          p="8px"
-        >
-          Portfolio
-        </Link>
-        <Link
-          href="/courses"
-          textDecoration="none"
-          _hover={{ color: "main", bg: "#fff" }}
-          p="8px"
-        >
-          Cursos
-        </Link>
-        <Link
-          href="contact"
-          textDecoration="none"
-          _hover={{ color: "main", bg: "#fff" }}
-          p="8px"
-        >
-          Contacto
-        </Link>
+        {status === STATUS.IS_LOADING && <LoadingDots />}
+
+        {status === STATUS.HAS_SUCCEDED && (
+          <>
+            <LinkWrapper
+              href="/"
+              textDecoration="none"
+              hover={{ color: "main", bg: "#fff" }}
+              p="8px"
+            >
+              Home
+            </LinkWrapper>
+            <LinkWrapper
+              href="/portfolio"
+              textDecoration="none"
+              hover={{ color: "main", bg: "#fff" }}
+              p="8px"
+            >
+              Portfolio
+            </LinkWrapper>
+            <LinkWrapper
+              href="/courses"
+              textDecoration="none"
+              hover={{ color: "main", bg: "#fff" }}
+              p="8px"
+            >
+              Cursos
+            </LinkWrapper>
+            <LinkWrapper
+              href="contact"
+              textDecoration="none"
+              hover={{ color: "main", bg: "#fff" }}
+              p="8px"
+            >
+              Contacto
+            </LinkWrapper>
+          </>
+        )}
       </Flex>
 
       {/* HAMBURGER MENU */}
@@ -97,40 +101,43 @@ function Header() {
               ></path>
             </svg>
           </MenuButton>
-          <MenuList display="flex" flexDirection="column">
-            <Link
-              href="/"
-              textDecoration="none"
-              _hover={{ color: "main", bg: "#fff" }}
-              p="8px"
-            >
-              Home
-            </Link>
-            <Link
-              href="/portfolio"
-              textDecoration="none"
-              _hover={{ color: "main", bg: "#fff" }}
-              p="8px"
-            >
-              Portfolio
-            </Link>
-            <Link
-              href="/courses"
-              textDecoration="none"
-              _hover={{ color: "main", bg: "#fff" }}
-              p="8px"
-            >
-              Cursos
-            </Link>
-            <Link
-              href="contact"
-              textDecoration="none"
-              _hover={{ color: "main", bg: "#fff" }}
-              p="8px"
-            >
-              Contacto
-            </Link>
-          </MenuList>
+
+          {status === STATUS.HAS_SUCCEDED && (
+            <MenuList display="flex" flexDirection="column">
+              <LinkWrapper
+                href="/"
+                textDecoration="none"
+                hover={{ color: "main", bg: "#fff" }}
+                p="8px"
+              >
+                Home
+              </LinkWrapper>
+              <LinkWrapper
+                href="/portfolio"
+                textDecoration="none"
+                hover={{ color: "main", bg: "#fff" }}
+                p="8px"
+              >
+                Portfolio
+              </LinkWrapper>
+              <LinkWrapper
+                href="/courses"
+                textDecoration="none"
+                hover={{ color: "main", bg: "#fff" }}
+                p="8px"
+              >
+                Cursos
+              </LinkWrapper>
+              <LinkWrapper
+                href="contact"
+                textDecoration="none"
+                hover={{ color: "main", bg: "#fff" }}
+                p="8px"
+              >
+                Contacto
+              </LinkWrapper>
+            </MenuList>
+          )}
         </Menu>
       </Flex>
     </Flex>
