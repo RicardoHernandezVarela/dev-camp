@@ -17,7 +17,7 @@ function Home() {
         textColor={"#fff"}
         bgColor={"main"}
         buttonText={"Explore"}
-        buttonColor={"#000"}
+        buttonColor={"darkButtonBg"}
         buttonBg={"#fff"}
       />
 
@@ -31,7 +31,7 @@ function Home() {
         bgColor={"#fff"}
         buttonText={"Learn More"}
         buttonColor={"#fff"}
-        buttonBg={"#000"}
+        buttonBg={"darkButtonBg"}
       />
 
       <HomeHero
@@ -40,7 +40,7 @@ function Home() {
         bgColor={"#fff"}
         buttonText={"Learn More"}
         buttonColor={"#fff"}
-        buttonBg={"#000"}
+        buttonBg={"darkButtonBg"}
       />
 
       <TitleSection title={"Our Talents"} subtitle={"TEAM"} />

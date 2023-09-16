@@ -28,7 +28,7 @@ function OurTalents() {
         <TalentCard />
       </Flex>
 
-      <CommonButton text={"Learn More"} color={"#fff"} bg={"#000"} />
+      <CommonButton text={"Learn More"} color={"#fff"} bg={"darkButtonBg"} />
     </Flex>
   );
 }

@@ -67,7 +67,7 @@ function Imagenes(props: any) {
       <CommonButton
         text="Learn More"
         color="white"
-        bg="black"
+        bg="darkButtonBg"
         route={"/all-notes"}
       />
     </Flex>

@@ -32,7 +32,7 @@ function MenuOur(props: any) {
           <Svg />
         </Flex>
 
-        <CommonButton text="Learn More" color="white" bg="black" />
+        <CommonButton text="Learn More" color="white" bg="darkButtonBg" />
       </Flex>
     </Flex>
   );
