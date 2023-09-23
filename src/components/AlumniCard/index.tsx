@@ -6,7 +6,7 @@ function AlumniCard() {
       <Flex
         width={"800px"}
         padding="24px"
-        boxShadow="1px 3px 20px 0px "
+        boxShadow="0px 4px 40px 0px rgba(0,0,0,0.25)"
         borderRadius="16px"
         marginTop="50px"
         gap="40px"
