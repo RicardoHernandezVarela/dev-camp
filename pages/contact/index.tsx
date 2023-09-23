@@ -1,12 +1,9 @@
 import { Flex, FormControl, Input, FormLabel, Button } from "@chakra-ui/react";
-import Header from "@/src/components/Layout/Header";
-import Footer from "@/src/components/Layout/Footer";
 import TitleSection from "@/src/components/Layout/TitleSection";
 
 function Contact() {
   return (
     <Flex flexDirection="column">
-      <Header />
       <TitleSection title={"contacto"} subtitle={"¿quieres saber mas..?"} />
 
       <Flex
@@ -52,8 +49,6 @@ function Contact() {
 
         <Flex border="1px" w={{ base: "300px", md: "350px" }} h="385px"></Flex>
       </Flex>
-
-      <Footer />
     </Flex>
   );
 }
