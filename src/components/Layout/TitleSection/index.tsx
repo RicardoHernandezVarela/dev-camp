@@ -1,6 +1,4 @@
-import { Button, Flex, Heading, Text } from "@chakra-ui/react";
-import CommonButton from "../CommonButton";
-import StackList from "../../StackList";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 
 function TitleSection(props: any) {
   return (
@@ -8,7 +6,7 @@ function TitleSection(props: any) {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
-      my="30px"
+      my="45px"
     >
       <Text
         fontSize="16px"
@@ -17,7 +15,7 @@ function TitleSection(props: any) {
         textTransform="uppercase"
         color="main"
       >
-        {props.subtitle}
+        {props?.data?.subtitle || props.subtitle}
       </Text>
       <Heading
         fontSize="40px"
@@ -27,10 +25,10 @@ function TitleSection(props: any) {
         mb="16px"
         textTransform="capitalize"
       >
-        {props.title}
+        {props?.data?.title || props.title}
       </Heading>
       <Text fontSize="20px" lineHeight="125%" textAlign={{ base: "center" }}>
-        Lorem ipsum, dolor sit amet consectetur adipisising elit.
+        {props?.data?.content || props.content}
       </Text>
     </Flex>
   );

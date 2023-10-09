@@ -15,7 +15,7 @@ import STATUS from "@/src/constants/status/status";
 function Home() {
   const { status, sanityData } = useHome();
 
-  if (status === STATUS.IS_LOADING) {
+  if (status === STATUS.IS_LOADING || !sanityData?.sections) {
     return <LoadingDots />;
   }
 
@@ -37,7 +37,12 @@ function Home() {
           data={sanityData?.sections[0]}
         />
 
-        <TitleSection title={"dev-camp"} subtitle={"bienvenidos"} />
+        <TitleSection
+          title={"dev-camp"}
+          subtitle={"bienvenidos"}
+          status={status}
+          data={sanityData?.sections[1]}
+        />
 
         <StackList />
 
@@ -48,6 +53,8 @@ function Home() {
           buttonText={"Learn More"}
           buttonColor={"#fff"}
           buttonBg={"#000"}
+          status={status}
+          data={sanityData?.sections[2]}
         />
 
         <HomeHero
@@ -57,6 +64,8 @@ function Home() {
           buttonText={"Learn More"}
           buttonColor={"#fff"}
           buttonBg={"#000"}
+          status={status}
+          data={sanityData?.sections[3]}
         />
 
         <TitleSection title={"Our Talents"} subtitle={"TEAM"} />
