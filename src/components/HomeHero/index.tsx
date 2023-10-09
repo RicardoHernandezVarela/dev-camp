@@ -1,7 +1,6 @@
-import { Button, Flex, Heading, Text } from "@chakra-ui/react";
-import Image from "next/image";
-import ImgGrupo from "../../assets/img_grupo.png";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 import CommonButton from "../Layout/CommonButton";
+import ImageFromSanity from "../Layout/ImageFromSanity";
 
 function HomeHero(props: any) {
   return (
@@ -14,7 +13,7 @@ function HomeHero(props: any) {
     >
       <Flex direction="column" w={{ base: "100%", md: "416px" }} my="60px">
         <Text color=" #FFF" fontSize="16px" fontWeight="700" mb="15px">
-          WELCOME
+          {props?.data?.mainText || "WELCOME"}
         </Text>
 
         <Heading
@@ -24,17 +23,18 @@ function HomeHero(props: any) {
           fontWeight="700"
           mb="15px"
         >
-          Lorem ipsum dolor sit amet consectetur
+          {props?.data?.title || "Lorem ipsum dolor sit amet consectetur"}
         </Heading>
 
         <Text w="100%" fontSize="15px" fontWeight="700" color={props.textColor}>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
+          {props?.data?.content ||
+            `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
           nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum,
-          voluptate culpa nesciunt delectus iste?
+          voluptate culpa nesciunt delectus iste?`}
         </Text>
 
         <CommonButton
-          text={props.buttonText}
+          text={props?.data?.button?.text || props.buttonText}
           color={props.buttonColor}
           bg={props.buttonBg}
         />
@@ -45,7 +45,12 @@ function HomeHero(props: any) {
         h={{ base: "250px", md: "378px" }}
         mb={{ base: "20px", md: "83px" }}
       >
-        <Image src={ImgGrupo} alt="" />
+        <ImageFromSanity
+          src={props?.data?.image}
+          status={props?.status}
+          width={644}
+          height={378}
+        />
       </Flex>
     </Flex>
   );

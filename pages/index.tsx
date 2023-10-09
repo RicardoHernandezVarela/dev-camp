@@ -33,6 +33,8 @@ function Home() {
           buttonText={"Explore"}
           buttonColor={"#000"}
           buttonBg={"#fff"}
+          status={status}
+          data={sanityData?.sections[0]}
         />
 
         <TitleSection title={"dev-camp"} subtitle={"bienvenidos"} />

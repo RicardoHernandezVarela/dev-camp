@@ -2,6 +2,8 @@ import Image from "next/image";
 
 import LoadingDots from "../LoadingDots";
 
+import fallback from "../../../assets/img_grupo.png";
+
 import STATUS from "@/src/constants/status/status";
 
 type ImageFromSanityTypes = {
@@ -18,7 +20,14 @@ function ImageFromSanity(props: ImageFromSanityTypes) {
     return <LoadingDots />;
   }
 
-  return <Image src={src.asset.url} alt="logo" width={width} height={height} />;
+  return (
+    <Image
+      src={src?.asset?.url || fallback}
+      alt="logo"
+      width={width}
+      height={height}
+    />
+  );
 }
 
 export default ImageFromSanity;
