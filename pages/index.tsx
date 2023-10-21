@@ -68,7 +68,7 @@ function Home() {
           data={sanityData?.sections[3]}
         />
 
-        <TitleSection title={"Our Talents"} subtitle={"TEAM"} />
+        <TitleSection status={status} data={sanityData?.sections[4]} />
 
         <OurTalents />
       </Flex>

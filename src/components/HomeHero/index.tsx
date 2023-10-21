@@ -50,6 +50,7 @@ function HomeHero(props: any) {
           status={props?.status}
           width={644}
           height={378}
+          priority={true}
         />
       </Flex>
     </Flex>

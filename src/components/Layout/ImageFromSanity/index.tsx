@@ -11,10 +11,11 @@ type ImageFromSanityTypes = {
   width: number;
   height: number;
   src: any;
+  priority?: boolean;
 };
 
 function ImageFromSanity(props: ImageFromSanityTypes) {
-  const { status, width, height, src } = props;
+  const { status, width, height, src, priority } = props;
 
   if (status === STATUS.IS_LOADING) {
     return <LoadingDots />;
@@ -26,6 +27,7 @@ function ImageFromSanity(props: ImageFromSanityTypes) {
       alt="logo"
       width={width}
       height={height}
+      priority={priority}
     />
   );
 }

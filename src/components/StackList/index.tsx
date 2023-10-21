@@ -129,7 +129,7 @@ function StackList() {
         </svg>
       </Flex>
 
-      <CommonButton text={"Más información"} color={"#fff"} bg={"darkButtonBg"} />
+      <CommonButton text={"Ver stack"} color={"#fff"} bg={"darkButtonBg"} />
     </Flex>
   );
 }
