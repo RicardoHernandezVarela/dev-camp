@@ -9,7 +9,7 @@ function Alumni() {
         <Flex direction="column">
             <SearchCard/>
 
-            <Flex direction="column" pb="50px">
+            <Flex direction={{base:"column", xl:"row"}} pb="50px"  flexWrap="wrap" px={{base:"0", xl:"0px", xxl:"60px"}} >
                 <AlumniCard/>
                 <AlumniCard/>
                 <AlumniCard/>
