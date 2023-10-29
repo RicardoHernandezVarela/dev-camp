@@ -16,10 +16,8 @@ function useHome() {
 
   /* GET HOME DATA */
   const getHomeData = async () => {
-    if (status === STATUS.HAS_SUCCEDED) return null;
-
     if (homeData) {
-      setHomeData(homeData);
+      setSanityData(homeData);
 
       setStatus(STATUS.HAS_SUCCEDED);
 
