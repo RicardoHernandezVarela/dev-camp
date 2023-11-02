@@ -2,6 +2,29 @@ import { Flex } from "@chakra-ui/react";
 import ImgPorfolio from "../Layout/ImgPorfolio";
 import CommonButton from "../Layout/CommonButton";
 
+const imgList = [
+  {
+    imagen:
+      "https://png.pngtree.com/png-vector/20190611/ourmid/pngtree-web-development-illustration-modern-can-be-used-for-landing-pages-web-png-image_1496213.jpg",
+  },
+  {
+    imagen: "https://www.fundaciontelefonica.com/wp-content/uploads/2016/07/programacion-730x400.jpg",
+  },
+  {
+    imagen: "https://blog.wildix.com/wp-content/uploads/2020/06/react-logo.jpg",
+  },
+  {
+    imagen:
+      "https://guru-soft.com/wp-content/uploads/2022/01/%C2%BFQue-es-el-HTML.jpg",
+  },
+  {
+    imagen: "https://www.arsys.es/blog/file/uploads/2018/01/css.jpg",
+  },
+  {
+    imagen: "https://geoinnova.org/wp-content/uploads/2021/08/logos.png",
+  },
+];
+
 function Imagenes(props: any) {
   return (
     <Flex
@@ -19,49 +42,9 @@ function Imagenes(props: any) {
         justifyContent="center"
         alignItems="center"
       >
-        <ImgPorfolio
-          foto={
-            "https://us.123rf.com/450wm/rastudio/rastudio1908/rastudio190800087/128545951-desarrollo-de-software-programaci%C3%B3n-aprendizaje-de-codificaci%C3%B3n-cursos-de-tecnolog%C3%ADa-de-la.jpg"
-          }
-        />
-        <ImgPorfolio
-          foto={
-            "https://educatesiempre.com/wp-content/uploads/2021/03/tiny-programmers-upgrading-operation-system-computer-isolated-flat-illustration_74855-11138.jpg.webp"
-          }
-        />
-
-        <ImgPorfolio
-          foto={
-            "https://us.123rf.com/450wm/rastudio/rastudio1908/rastudio190800087/128545951-desarrollo-de-software-programaci%C3%B3n-aprendizaje-de-codificaci%C3%B3n-cursos-de-tecnolog%C3%ADa-de-la.jpg"
-          }
-        />
-        <ImgPorfolio
-          foto={
-            "https://educatesiempre.com/wp-content/uploads/2021/03/tiny-programmers-upgrading-operation-system-computer-isolated-flat-illustration_74855-11138.jpg.webp"
-          }
-        />
-
-        <ImgPorfolio
-          foto={
-            "https://us.123rf.com/450wm/rastudio/rastudio1908/rastudio190800087/128545951-desarrollo-de-software-programaci%C3%B3n-aprendizaje-de-codificaci%C3%B3n-cursos-de-tecnolog%C3%ADa-de-la.jpg"
-          }
-        />
-        <ImgPorfolio
-          foto={
-            "https://educatesiempre.com/wp-content/uploads/2021/03/tiny-programmers-upgrading-operation-system-computer-isolated-flat-illustration_74855-11138.jpg.webp"
-          }
-        />
-
-        <ImgPorfolio
-          foto={
-            "https://us.123rf.com/450wm/rastudio/rastudio1908/rastudio190800087/128545951-desarrollo-de-software-programaci%C3%B3n-aprendizaje-de-codificaci%C3%B3n-cursos-de-tecnolog%C3%ADa-de-la.jpg"
-          }
-        />
-        <ImgPorfolio
-          foto={
-            "https://educatesiempre.com/wp-content/uploads/2021/03/tiny-programmers-upgrading-operation-system-computer-isolated-flat-illustration_74855-11138.jpg.webp"
-          }
-        />
+        {imgList.map((item, index) => {
+          return <ImgPorfolio key={index} foto={item.imagen} />;
+        })}
       </Flex>
 
       <CommonButton
