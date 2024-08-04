@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NextLink from "next/link";
 import { Link as ChakraLink, Flex } from "@chakra-ui/react";
 
 type linkWrapper = {
@@ -28,6 +29,7 @@ function LinkWrapper(props: linkWrapper) {
     return (
       <ChakraLink
         w="max-content"
+        as={NextLink}
         href={href}
         textDecoration={textDecoration || "none"}
         textDecorationColor={textDecorationColor || "companyPic"}
