@@ -2,7 +2,15 @@ const homePageQuery = `
   *[_type == "page" && pageType == "home"]{
     pageType,
     name,
-    sections[]{...}
+    sections[]{
+      ...,
+      image {
+        asset->{
+          ...,
+          metadata
+        }
+      }
+    }
   }
 `;
 

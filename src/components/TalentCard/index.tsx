@@ -1,6 +1,6 @@
 import { Flex, Image, Text } from "@chakra-ui/react";
 
-function TalentCard() {
+function TalentCard(props:any) {
   return (
     <Flex
       w="200px"
@@ -17,10 +17,10 @@ function TalentCard() {
           h="150px"
           borderRadius="full"
           border="1px"
-          src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg"
+          src={props.imagen}
         />
-        <Text>Richard Guerra</Text>
-        <Text>CTO</Text>
+        <Text>{props.nombre}</Text>
+        <Text>{props.pocision}</Text>
       </Flex>
     </Flex>
   );

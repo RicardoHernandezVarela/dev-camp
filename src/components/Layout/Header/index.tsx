@@ -94,7 +94,7 @@ function Header() {
               hover={{ color: "main", bg: "#fff" }}
               p="8px"
             >
-              Home
+              Inicio
             </LinkWrapper>
             <LinkWrapper
               href="/portfolio"
@@ -102,7 +102,7 @@ function Header() {
               hover={{ color: "main", bg: "#fff" }}
               p="8px"
             >
-              Portfolio
+              Proyectos
             </LinkWrapper>
             <LinkWrapper
               href="/courses"
