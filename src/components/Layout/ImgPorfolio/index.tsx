@@ -7,6 +7,7 @@ function ImgPorfolio(props: any) {
       h="334px"
       justifyContent="center"
       boxShadow="0px 4px 40px 0px rgba(0,0,0,0.25)"
+      padding="20px"
     >
       <Image src={props.foto} />
     </Flex>
